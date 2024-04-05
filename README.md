@@ -1,18 +1,21 @@
-<h1>Base de Datos RRHH - Ejercicios</h1>
+<h1>Base de dades RRHH - Exercicis</h1>
 
-<p>En este repositorio encontrarás ejercicios relacionados con la base de datos de Recursos Humanos (RRHH). Los ejercicios cubren temas como consultas SQL, almacenamiento de procedimientos almacenados, y más.</p>
+<p>En aquest repositori trobaràs exercicis relacionats amb la base de dades de Recursos Humans (RRHH). Els exercicis cobreixen temes com consultes SQL, emmagatzematge de procediments emmagatzemats, i més.</p>
 
-<h2>Estructura del Repositorio:</h2>
+<h2>Estructura del Repositori:</h2>
 
-<p>ejercicios/: Contiene los archivos de código y scripts para los ejercicios.</p>
-<p>docs/: Documentación adicional, incluyendo este README.</p>
-<p>sql/: Scripts SQL para la creación de la base de datos y consultas.</p>
-<p>README.md: Este archivo que estás leyendo ahora.</p>
+<p>exercicis/: Conté els arxius de codi i scripts pels exercicis.</p>
+<p>docs/: Documentació addicional, incloent aquest README.</p>
+<p>sql/: Scripts SQL per a la creació de la base de dades i consultes.</p>
+<p>README.md: Aquest arxiu que estàs llegint ara.</p>
+
 <p>Contribuir:</p>
-<p>Si deseas contribuir, puedes hacer un fork del repositorio, realizar tus cambios y luego enviar un pull request. Agradecemos cualquier contribución o sugerencia para mejorar los ejercicios.</p>
 
-<h2>Contacto:</h2>
-<p>Si tienes alguna pregunta o problema, puedes contactarnos a través de nuestro correo electrónico o abrir un issue en GitHub.</p>
+<p>Si desitges contribuir, pots fer un fork del repositori, realitzar els teus canvis i després enviar un pull request. Agraïm qualsevol contribució o suggeriment per millorar els exercicis.</p>
 
-Email: ejemplo@correo.com
-GitHub: TuUsuario/TuRepositorio
+<h2>Contacte:</h2>
+
+<p>Si tens alguna pregunta o problema, pots contactar-nos a través del nostre correu electrònic o obrir un issue a GitHub.</p>
+
+Email: m.lopez5@
+GitHub: mlopezsapalomera/BaseDeDades
