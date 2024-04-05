@@ -132,9 +132,7 @@ empleat, el codi d’empleat, el nom, els anys treballats i la categoria profess
 pertany.</p>
 
 ```mysql
-Exercici 7 - Fes una consulta utilitzant la funció anterior perquè mostri mostri de cada
-empleat, el codi d’empleat, el nom, els anys treballats i la categoria professional a la que
-pertany.
+
 ```
 
 
