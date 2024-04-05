@@ -132,7 +132,13 @@ empleat, el codi d’empleat, el nom, els anys treballats i la categoria profess
 pertany.</p>
 
 ```mysql
-
+SELECT
+    empleat_id AS codi_empleat,
+    nom,
+    TIMESTAMPDIFF(YEAR, data_contractacio, CURDATE()) AS anys_treballats,
+    spCategoria(empleat_id) AS categoria_professional
+FROM
+    empleats;
 ```
 
 
