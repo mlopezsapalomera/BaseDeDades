@@ -4,12 +4,12 @@
 
 <h2>Estructura del Repositorio:</h2>
 
-<p>ejercicios/: Contiene los archivos de código y scripts para los ejercicios.
-docs/: Documentación adicional, incluyendo este README.
-sql/: Scripts SQL para la creación de la base de datos y consultas.
-README.md: Este archivo que estás leyendo ahora.
-Contribuir:
-Si deseas contribuir, puedes hacer un fork del repositorio, realizar tus cambios y luego enviar un pull request. Agradecemos cualquier contribución o sugerencia para mejorar los ejercicios.</p>
+<p>ejercicios/: Contiene los archivos de código y scripts para los ejercicios.</p>
+<p>docs/: Documentación adicional, incluyendo este README.</p>
+<p>sql/: Scripts SQL para la creación de la base de datos y consultas.</p>
+<p>README.md: Este archivo que estás leyendo ahora.</p>
+<p>Contribuir:</p>
+<p>Si deseas contribuir, puedes hacer un fork del repositorio, realizar tus cambios y luego enviar un pull request. Agradecemos cualquier contribución o sugerencia para mejorar los ejercicios.</p>
 
 <h2>Contacto:</h2>
 <p>Si tienes alguna pregunta o problema, puedes contactarnos a través de nuestro correo electrónico o abrir un issue en GitHub.</p>
