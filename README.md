@@ -1,8 +1,8 @@
 <h1>Base de Datos RRHH - Ejercicios</h1>
 
-<h2>En este repositorio encontrarás ejercicios relacionados con la base de datos de Recursos Humanos (RRHH). Los ejercicios cubren temas como consultas SQL, almacenamiento de procedimientos almacenados, y más.</h2>
+<p>En este repositorio encontrarás ejercicios relacionados con la base de datos de Recursos Humanos (RRHH). Los ejercicios cubren temas como consultas SQL, almacenamiento de procedimientos almacenados, y más.</p>
 
-<h3>Estructura del Repositorio:</h3>
+<h2>Estructura del Repositorio:</h2>
 
 <p>ejercicios/: Contiene los archivos de código y scripts para los ejercicios.
 docs/: Documentación adicional, incluyendo este README.
