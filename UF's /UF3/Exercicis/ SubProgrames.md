@@ -14,13 +14,12 @@ BEGIN
 END //
 DELIMITER ;
 ```
-
 <p>Exercici 2 - Fes una funció anomenada spPotencia, tal que donada una base i un
 exponent, ens calculi la seva potència. Intenta no utilitzar la funció POW.</p>
 
 <p>Exemple : SELECT spPotencia(2,3) => 8</p>
 
-```
+```mysql
 DELIMITER //
 CREATE FUNCTION spPotencia(base INT, exponent INT)
 RETURNS INT
@@ -37,14 +36,32 @@ BEGIN
 END //
 DELIMITER ;
 ```
-
 <p>Exercici 3 - Fes una funció anomenada spIncrement que donat un codi d’empleat i un
 % de increment, ens calculi el salari sumant aquest percentatge.</p>
 <p>Per exemple, suposem que l’ empleat amb id_empleat = 124 té un salari de 1000</p>
 
+<p>Exemple: SELECT spIncrement(124,10) obtindriem -> 1100</p>
 
-Exemple: SELECT spIncrement(124,10) obtindriem -> 1100
+```mysql
+DELIMITER //
+CREATE FUNCTION spIncrement(id_empleat INT, increment DECIMAL(5,2))
+RETURNS DECIMAL(8,2)
+BEGIN
+    DECLARE salari_actual DECIMAL(8,2);
+    DECLARE salari_incrementat DECIMAL(8,2);
 
+    -- Obtener el salario actual del empleado
+    SELECT salari INTO salari_actual
+    FROM empleats
+    WHERE empleat_id = id_empleat;
+
+    -- Calcular el salario incrementado
+    SET salari_incrementat = salari_actual + (salari_actual * (increment / 100));
+
+    RETURN salari_incrementat;
+END //
+DELIMITER ;
+```
 
 Exercici 4 - Fes una funció anomenada spPringat, tal que li passem un codi de
 departament, i ens torni el codi d’empleat que guanya menys d’aquell departament.
