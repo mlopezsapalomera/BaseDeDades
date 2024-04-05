@@ -1,14 +1,24 @@
-/*ENUNCIATS DE FUNCIONS*/
 
-/*
-Exercici 1 - Fes una funció anomenada spData, tal que donada una data en format
+<p>Exercici 1 - Fes una funció anomenada spData, tal que donada una data en format
 MySQL ( AAAA-MM-DD ) ens retorni una cadena de caràcters en format DD-MM-AAAA
-Exemple : SELECT spData('1988-12-01') => 01-12-1988
+Exemple : SELECT spData('1988-12-01') => 01-12-1988</p>
 
-Exercici 2 - Fes una funció anomenada spPotencia, tal que donada una base i un
-exponent, ens calculi la seva potència. Intenta no utilitzar la funció POW.
+<p>Exercici 2 - Fes una funció anomenada spPotencia, tal que donada una base i un
+exponent, ens calculi la seva potència. Intenta no utilitzar la funció POW.</p>
 
-Exemple : SELECT spPotencia(2,3) => 8
+<p>Exemple : SELECT spPotencia(2,3) => 8</p>
+
+```mysql
+DELIMITER //
+CREATE FUNCTION spData(data_mysql DATE)
+RETURNS VARCHAR(10)
+BEGIN
+    DECLARE data_convertida VARCHAR(10);
+    SET data_convertida = DATE_FORMAT(data_mysql, '%d-%m-%Y');
+    RETURN data_convertida;
+END //
+DELIMITER ;
+```
 
 
 Exercici 3 - Fes una funció anomenada spIncrement que donat un codi d’empleat i un
