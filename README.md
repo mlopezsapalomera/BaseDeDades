@@ -4,9 +4,8 @@
 
 <h2>Estructura del Repositori:</h2>
 
-<p>exercicis/: Conté els arxius de codi i scripts pels exercicis.</p>
-<p>docs/: Documentació addicional, incloent aquest README.</p>
-<p>sql/: Scripts SQL per a la creació de la base de dades i consultes.</p>
+<p>UF's/: Conté els arxius de codi i scripts pels exercicis de cada UF</p>
+<p>Informació/: Documentació sobre el meu GitHub personal</p>
 <p>README.md: Aquest arxiu que estàs llegint ara.</p>
 
 <p>Contribuir:</p>
