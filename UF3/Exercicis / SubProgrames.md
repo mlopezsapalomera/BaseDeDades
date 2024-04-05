@@ -1,12 +1,7 @@
-
+<h1>ACTIVITAT - EXERCICIS SUBPROGRAMES</h1>
 <p>Exercici 1 - Fes una funció anomenada spData, tal que donada una data en format
 MySQL ( AAAA-MM-DD ) ens retorni una cadena de caràcters en format DD-MM-AAAA
 Exemple : SELECT spData('1988-12-01') => 01-12-1988</p>
-
-<p>Exercici 2 - Fes una funció anomenada spPotencia, tal que donada una base i un
-exponent, ens calculi la seva potència. Intenta no utilitzar la funció POW.</p>
-
-<p>Exemple : SELECT spPotencia(2,3) => 8</p>
 
 ```mysql
 DELIMITER //
@@ -20,10 +15,33 @@ END //
 DELIMITER ;
 ```
 
+<p>Exercici 2 - Fes una funció anomenada spPotencia, tal que donada una base i un
+exponent, ens calculi la seva potència. Intenta no utilitzar la funció POW.</p>
 
-Exercici 3 - Fes una funció anomenada spIncrement que donat un codi d’empleat i un
-% de increment, ens calculi el salari sumant aquest percentatge.
-Per exemple, suposem que l’ empleat amb id_empleat = 124 té un salari de 1000
+<p>Exemple : SELECT spPotencia(2,3) => 8</p>
+
+```
+DELIMITER //
+CREATE FUNCTION spPotencia(base INT, exponent INT)
+RETURNS INT
+BEGIN
+    DECLARE result INT DEFAULT 1;
+    DECLARE i INT DEFAULT 1;
+
+    WHILE i <= exponent DO
+        SET result = result * base;
+        SET i = i + 1;
+    END WHILE;
+
+    RETURN result;
+END //
+DELIMITER ;
+```
+
+<p>Exercici 3 - Fes una funció anomenada spIncrement que donat un codi d’empleat i un
+% de increment, ens calculi el salari sumant aquest percentatge.</p>
+<p>Per exemple, suposem que l’ empleat amb id_empleat = 124 té un salari de 1000</p>
+
 
 Exemple: SELECT spIncrement(124,10) obtindriem -> 1100
 
