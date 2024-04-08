@@ -1,5 +1,6 @@
 <h1>ACTIVITAT - EXERCICIS SUBPROGRAMES</h1>
-<p>Exercici 1 - Fes una funció anomenada spData, tal que donada una data en format
+<h2>Exercici 1</h2> 
+<p>Fes una funció anomenada spData, tal que donada una data en format
 MySQL ( AAAA-MM-DD ) ens retorni una cadena de caràcters en format DD-MM-AAAA
 Exemple : SELECT spData('1988-12-01') => 01-12-1988</p>
 
@@ -14,7 +15,8 @@ BEGIN
 END //
 DELIMITER ;
 ```
-<p>Exercici 2 - Fes una funció anomenada spPotencia, tal que donada una base i un
+<h2>Exercici 2</h2> 
+<p></p>Fes una funció anomenada spPotencia, tal que donada una base i un
 exponent, ens calculi la seva potència. Intenta no utilitzar la funció POW.</p>
 
 <p>Exemple : SELECT spPotencia(2,3) => 8</p>
@@ -36,7 +38,8 @@ BEGIN
 END //
 DELIMITER ;
 ```
-<p>Exercici 3 - Fes una funció anomenada spIncrement que donat un codi d’empleat i un
+<h2>Exercici 3</h2> 
+<p></p>Fes una funció anomenada spIncrement que donat un codi d’empleat i un
 % de increment, ens calculi el salari sumant aquest percentatge.</p>
 <p>Per exemple, suposem que l’ empleat amb id_empleat = 124 té un salari de 1000</p>
 
@@ -62,7 +65,8 @@ BEGIN
 END //
 DELIMITER ;
 ```
-<p>Exercici 4 - Fes una funció anomenada spPringat, tal que li passem un codi de
+<h2>Exercici 4</h2> 
+<p></p>Fes una funció anomenada spPringat, tal que li passem un codi de
 departament, i ens torni el codi d’empleat que guanya menys d’aquell departament.</p>
 
 ```mysql
@@ -83,14 +87,16 @@ BEGIN
 END //
 DELIMITER ;
 ```
-<p>Exercici 5 - Utilitzant la funció spPringat fes una consulta per obtenir de cada
+<h2>Exercici 5</h2> 
+<p></p>Utilitzant la funció spPringat fes una consulta per obtenir de cada
 departament, l’empleat pringat. Mostra el codi i nom del departament, i el codi d’empleat.</p>
 
 ```mysql
 SELECT d.departament_id, d.nom AS nom_departament, spPringat(d.departament_id) AS empleat_pringat_id
 FROM departaments d;
 ```
-<p>Exercici 6 - Fes una funció anomenada spCategoria, tal que donat un codi d’empleat,
+<h2>Exercici 6</h2>
+<p></p>Fes una funció anomenada spCategoria, tal que donat un codi d’empleat,
 ens digui en quina categoria professional està. El criteri que volem seguir per determinar
 la categoria professional és en funció dels anys que porta treballant a l’empresa:</p>
 
@@ -127,7 +133,8 @@ BEGIN
 END //
 DELIMITER ;
 ```
-<p>Exercici 7 - Fes una consulta utilitzant la funció anterior perquè mostri mostri de cada
+<h2>Exercici 7</h2> 
+<p></p>Fes una consulta utilitzant la funció anterior perquè mostri mostri de cada
 empleat, el codi d’empleat, el nom, els anys treballats i la categoria professional a la que
 pertany.</p>
 
